@@ -1,0 +1,36 @@
+
+version: '2.1'
+services:
+
+  generator:
+    build:
+      context: generator/.
+    environment:
+      - WRITERS=1
+    volumes:
+      - ./volumes/writers:/writers
+
+
+  node1:
+    user: root
+    container_name: besu-node-1
+    volumes: 
+      - ./config:/opt/besu/config
+      - ./volumes/writers/1/keys:/opt/besu/besu/keys/
+
+    image: hyperledger/besu:latest
+    command: 
+      --config-file=/opt/besu/config/besu/config.toml
+      --genesis-file=/opt/besu/config/besu/genesis.json
+      --data-path=/opt/besu/config/besu/
+      --node-private-key-file=/opt/besu/besu/keys/key
+      # "--rpc-http-api=WEB3,ETH,NET,IBFT,ADMIN",
+      # "--rpc-ws-api='WEB3,ETH,NET,IBFT,ADMIN'"
+    
+    ports:
+      - "8545:8545"
+      - "8546:8549"
+    # networks:
+    #   besu:
+    #     # ipv4_address: 172.16.1.30 
+    restart: always
