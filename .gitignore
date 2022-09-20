@@ -1,2 +1,3 @@
 ./config/besu/caches
 ./config/besu/database
+./volumes/writers
