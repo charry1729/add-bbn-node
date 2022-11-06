@@ -22,7 +22,7 @@ services:
     command: 
       --config-file=/opt/besu/config/besu/config.toml
       --genesis-file=/opt/besu/config/besu/genesis.json
-      --data-path=/opt/besu/config/besu/
+      --static-nodes-file=/opt/besu/config/besu/static-nodes.json
       --node-private-key-file=/opt/besu/besu/keys/key
       # "--rpc-http-api=WEB3,ETH,NET,IBFT,ADMIN",
       # "--rpc-ws-api='WEB3,ETH,NET,IBFT,ADMIN'"

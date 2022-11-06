@@ -1,32 +1,33 @@
 {
   "config": {
-    "chainId": 2022,
-    "berlinBlock": 0,
+    "chainId": 2023,
+    "constantinoplefixblock": 0,
     "contractSizeLimit": 2147483647,
     "ibft2": {
       "blockperiodseconds": 2,
       "epochlength": 30000,
       "requesttimeoutseconds": 10,
       "blockreward": "5000000000000000",
-      "miningbeneficiary": "0x5b9B3A6C8c7213C5AEF7ff3700aFCfFc65896Cd9"
+      "miningbeneficiary": "0xa75783E7a492f9eD9c52b31c6A61ADFdF62A8411"
     }
   },
   "nonce": "0x0",
   "timestamp": "0x58ee40ba",
-  "extraData": "0xf87ea00000000000000000000000000000000000000000000000000000000000000000f85494088ee0a5a9fee68b126c015b6a53883943d8d2a294e13d3f84553512dd6c5f3f556c9c3cff21d61cf99447196e3fd085730b28d13fe3f20f41c1076a18ad94478f339dd171e8c7a13a1b7f767bc62cce576d53808400000000c0",
+  "extraData": "0xf87ea00000000000000000000000000000000000000000000000000000000000000000f854948e9e7e12e2e5a6cfdde1d6a13b0c0029769be25e9426f760ecda8a15e5b6b71d89a126fa88dbfe87579422259df1a3ca8e69448b17ee7d0a783d02e6a647941fbd4d38d0923fcaa7489b019ba2c8c5695f1f21808400000000c0",
   "gasLimit": "0x1fffffffffffff",
   "difficulty": "0x1",
   "mixHash": "0x63746963616c2062797a616e74696e65206661756c7420746f6c6572616e6365",
   "coinbase": "0x0000000000000000000000000000000000000000",
   "alloc": {
-    "5b9B3A6C8c7213C5AEF7ff3700aFCfFc65896Cd9": {
+    "a75783E7a492f9eD9c52b31c6A61ADFdF62A8411": {
       "balance": "0xad78ebc5ac6200000"
     },
-    "2792a3C5de07ef92ccdFe8D7d2f9b3E32F00C6c3": {
+    "7503a794A5981726EC27D26F2247Dc261e766344": {
       "balance": "90000000000000000000000"
     },
-    "87f0631Ab6672C733D1ec5E487d61C614b402AD6": {
+    "59001AEFEFCD72Ac25CFb35E00Baefc848aBdF86": {
       "balance": "90000000000000000000000"
     }
   }
 }
+

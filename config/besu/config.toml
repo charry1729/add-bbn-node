@@ -2,7 +2,7 @@
 identity="chary"
 data-path="/var/lib/besu/data"
 genesis-file="/var/lib/config/besu/genesis.json"
-logging="DEBUG"
+logging="TRACE"
 nat-method="AUTO"
 tx-pool-retention-hours=999
 tx-pool-max-size=1024
